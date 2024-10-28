@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "Abrigo",
+        "price": 375
+    },
+    {
+        "id": 2,
+        "name": "Chaqueta",
+        "price": 1062
+    },
+    {
+        "id": 3,
+        "name": "Horno",
+        "price": 225
+    },
+    {
+        "id": 4,
+        "name": "Placa Madre Gigabyte",
+        "price": 612
+    }
+]
