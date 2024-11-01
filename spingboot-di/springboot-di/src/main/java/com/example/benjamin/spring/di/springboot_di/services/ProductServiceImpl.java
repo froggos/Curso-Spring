@@ -19,7 +19,7 @@ public class ProductServiceImpl implements ProductService {
 
     private ProductRepository repo;
 
-    public ProductServiceImpl(@Qualifier("productList") ProductRepository repo) {
+    public ProductServiceImpl(@Qualifier("productJson") ProductRepository repo) {
         this.repo = repo;
     }
 
