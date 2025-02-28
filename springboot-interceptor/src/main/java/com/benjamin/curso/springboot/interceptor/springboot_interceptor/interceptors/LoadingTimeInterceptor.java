@@ -46,20 +46,19 @@ public class LoadingTimeInterceptor implements HandlerInterceptor {
         request.setAttribute("start", start);
 
         Random random = new Random();
-        int delay = random.nextInt(500);
+        int delay = random.nextInt(500); 
         Thread.sleep(delay);
 
-        Map<String, String> json = new HashMap<>();
-        json.put("error", "no tienes acceso a esta pagina.");
-        json.put("date", new Date().toString());
+        // Map<String, String> json = new HashMap<>();
+        // json.put("error", "no tienes acceso a esta pagina.");
+        // json.put("date", new Date().toString());
 
-        ObjectMapper mapper = new ObjectMapper();
-        String jsonString = mapper.writeValueAsString(json);
-        response.setContentType("applicacion/json");
-        response.setStatus(401);
-        response.getWriter().write(jsonString);
+        // ObjectMapper mapper = new ObjectMapper();
+        // String jsonString = mapper.writeValueAsString(json);
+        // response.setContentType("applicacion/json");
+        // response.setStatus(401);
+        // response.getWriter().write(jsonString);
 
-        return false;
+        return true;
     }
-
 }
